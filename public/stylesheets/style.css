@@ -1,8 +1,357 @@
+/* Imports brand fonts: Montserrat (body/header) and Italianno (decorative titles) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Italianno&display=swap');
+
+/* Selects all elements on the page */
+* {
+    box-sizing: border-box; 
+}
+/* Styles the entire page background and default font/text color */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000000;
+    background-color: #F7F7F7; /* Seasalt background */
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #00B7FF;
+/* Centers all main content and sets max width */
+.container { 
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+/* Styles all headings (h1, h2, h3, h4) */
+h1, h2, h3, h4 {
+    color: #10291D; /* Dark Green color */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Styles the large, decorative title (e.g., Downtown Donuts name) */
+.decorative-title {
+    font-family: 'Italianno', cursive; 
+    font-size: 4rem;
+    color: #F7C64A; /* Saffron accent color */
+    line-height: 1;
+}
+
+/* --- 2. Header & Navigation (Universal) --- */
+/* Styles the header bar at the top of the page */
+.header { 
+    background-color: #F7F7F7;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Styles the logo image */
+.logo img { 
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Styles the list holding the navigation links */
+.navigation ul { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Styles individual items in the navigation list */
+.navigation li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Styles the navigation links */
+.navigation a {
+    text-decoration: none;
+    color: #10291D;
+    padding: 10px 5px;
+}
+
+/* Styles navigation links when hovered over or active */
+.navigation a:hover, .navigation a.active {
+    color: #F7C64A;
+}
+
+/* --- 3. Buttons (Universal) --- */
+/* Basic button styling (size, shape, position) */
+.button { 
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Saffron button for main Call-to-Action */
+.button-primary { 
+    background-color: #F7C64A;
+    color: #000000;
+    border: 2px solid #F7C64A;
+}
+
+/* Styles the primary button when hovered over */
+.button-primary:hover {
+    background-color: #e0b441;
+}
+
+/* Dark Green outline button for secondary actions */
+.button-secondary { 
+    background-color: transparent;
+    color: #10291D;
+    border: 2px solid #10291D;
+}
+
+/* Styles the secondary button when hovered over */
+.button-secondary:hover {
+    background-color: #10291D;
+    color: #F7F7F7;
+}
+
+/* --- 4. Welcome Banner (Index.html Hero) --- */
+/* Styles the large hero section on the homepage */
+.welcome-banner { 
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Styles the text container inside the hero image */
+.banner-content { 
+    background-color: rgba(16, 41, 29, 0.7);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    color: #F7F7F7;
+}
+
+/* --- 5. Footer (Universal) --- */
+/* Styles the bottom bar of the page */
+.footer { 
+    background-color: #10291D;
+    color: #F7F7F7;
+    text-align: center;
+    padding: 20px;
+    clear: both; /* Ensures footer drops below any floating content */
+    font-size: 0.9rem;
+}
+
+/* Styles links within the footer */
+.footer a {
+    color: #F7C64A;
+    text-decoration: none;
+}
+
+/* --- 6. Shared Page Component Styles (Menu/Feature/Milestone Boxes) --- */
+/* Styles the Saffron horizontal dividing line */
+.saffron-divider {
+    border: none;
+    border-top: 2px solid #F7C64A;
+    width: 50%;
+    margin: 40px auto;
+}
+
+/* Styles the floating two-column boxes (Menu, Index Features, Milestones) */
+.feature-box, .menu-item-box, .milestone-item {
+    width: 48%; 
+    float: left;
+    margin-right: 4%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #FFFFFF; /* White background for the boxes */
+}
+
+/* Pushes every second box to the right column */
+.feature-box:nth-child(2), .menu-item-box:nth-child(even), .milestone-item:nth-child(even) {
+    float: right;
+    margin-right: 0;
+}
+
+/* Sizes and centers all product images uniformly */
+.menu-item-image {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Styles the menu item title */
+.menu-item-box h4 {
+    color: #10291D;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Styles the menu item description text */
+.menu-item-box p {
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Styles the price text, highlighting it in Saffron */
+.menu-item-box .price {
+    font-weight: 600;
+    color: #F7C64A;
+    margin-top: 5px;
+}
+
+/* --- 7. Menu & Ordering Section Specifics --- */
+/* Styles text above the menu boxes */
+.menu-intro, .ordering-links-section {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* --- 8. Comments Page Specifics --- */
+/* Styles introductory text on the comments page */
+.feedback-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto 30px;
+}
+
+/* Styles the box containing the feedback form */
+.feedback-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; 
+    border: 1px solid #E0E0E0; 
+    border-radius: 4px;
+}
+
+/* Styles form labels (Your Name, Email, etc.) */
+.feedback-form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #10291D; 
+}
+
+/* Styles text and textarea input boxes */
+.feedback-form-container input[type="text"],
+.feedback-form-container input[type="email"],
+.feedback-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B7B4C8; 
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/* Styles the actual quote text in the display section */
+.comment-text {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Highlights the selected donut rating button */
+.rating-group input[type="radio"]:checked + label {
+    background-color: #F7C64A; 
+    color: #10291D;
+    border-color: #F7C64A;
+    font-weight: 600;
+}
+
+/* Styles the boxes displaying previous customer comments */
+.customer-comment-box {
+    border-left: 5px solid #F7C64A;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #FFFFFF; 
+    border-radius: 4px;
+}
+
+/* --- 9. About Us Page Specifics --- */
+/* Styles the large box containing the story narrative */
+.main-narrative-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #E0E0E0; 
+    border-radius: 4px;
+    background-color: #FFFFFF; 
+    clear: both;
+    overflow: auto;
+    text-align: left; 
+}
+
+/* Centers the main narrative heading inside the box */
+.main-narrative-section h3 {
+    text-align: center;
+}
+
+/* Styles the image within the story box */
+.narrative-image {
+    width: 100%; 
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+/* Styles the blockquote containing the founder's quote */
+.founder-quote {
+    font-style: italic;
+    font-weight: 400;
+    background-color: #F7F7F7;
+    border-left: 5px solid #F7C64A;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+/* Styles the founder's name inside the quote */
+.founder-quote cite {
+    font-style: normal;
+    font-weight: 600;
+    color: #10291D;
+}
+
+/* Styles the year text within the milestone boxes */
+.milestone-year {
+    color: #F7C64A; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Styles the heading text inside the milestone boxes */
+.milestone-item h4 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 5px;
 }

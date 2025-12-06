@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Head section: sets character encoding  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Page title shown in the browser tab  -->
+    <title>Downtown Donuts - Feedback</title>
+
+    <!--  Links external stylesheet for page styling  -->
+    <link rel="stylesheet" href="stylesheets/style.css"> 
+</head>
+<body>
+    <!--  Body contains all visible content on the page  -->
+
+    <header class="header">
+        <!--  Header holds the logo, navigation, and order button  -->
+        <div class="logo">
+            <!--  Logo container displaying the bakery logo  -->
+            <img src="images/whiteLogo.png" alt="Downtown Donuts Logo"> 
+        </div>
+
+        <nav class="navigation">
+            <!--  Navigation menu linking to other pages  -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="comments.html" class="active">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <a href="menu.html" class="button button-primary" target="_self">Order Now</a>
+    </header>
+
+    <section class="container">
+        <!--  Main section for feedback form and reviews  -->
+        <h2>Leave Your Feedback!</h2>
+        <p class="feedback-intro">We love hearing from our customers! Use the form below to share your thoughts on our donuts, coffee, and service.</p>
+
+        <div class="form-wrapper">
+            <!-- Contains the entire user feedback form  -->
+            <form id="feedback-form" method="POST">
+                
+                <!--  User enters their name  -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="customer_name" required>
+
+                <!--  User enters their email  -->
+                <label for="email">Email (Won't be published):</label>
+                <input type="email" id="email" name="customer_email">
+
+                <!--  User selects a rating from 1 to 5  -->
+                <div class="rating-group">
+                    <label>Donut Rating (1 is bad, 5 is great):</label>
+                    <input type="radio" id="rating1" name="rating" value="1" required><label for="rating1">1</label>
+                    <input type="radio" id="rating2" name="rating" value="2"><label for="rating2">2</label>
+                    <input type="radio" id="rating3" name="rating" value="3"><label for="rating3">3</label>
+                    <input type="radio" id="rating4" name="rating" value="4"><label for="rating4">4</label>
+                    <input type="radio" id="rating5" name="rating" value="5"><label for="rating5">5</label>
+                </div>
+
+                <!--  User writes their feedback message  -->
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="customer_comment" rows="6" required></textarea>
+
+                <!-- /* Button submits the form */ -->
+                <button type="submit" class="button button-primary submit-form">Submit Feedback</button>
+            </form>
+        </div>
+
+        <hr class="saffron-divider">
+
+        <!--  Section listing customer reviews  -->
+        <div id="feedback-list">
+            <h2>What Our Customers Are Saying</h2>
+
+            <div class="comment-display-box">
+                <!--  Box displaying a single customer review  -->
+                <p class="comment-text">"Absolutely the best coffee and glaze donut combo downtown! The staff is always so friendly and the shop is truly a cozy escape."</p>
+                <p class="comment-meta">- Sarah K. | Rating: 5 / 5</p>
+            </div>
+
+            <div class="comment-display-box">
+                <!--  Box displaying a single customer review  -->
+                <p class="comment-text">"I love that they still use traditional recipes. The richness and texture was a perfect twist as they're fluffy and soft. A must-visit!"</p>
+                <p class="comment-meta">- John P. | Rating: 4 / 5</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
+
+    <script>
+        /* Handle dynamic feedback submission without reloading the page */
+        const form = document.getElementById('feedback-form');
+        const feedbackList = document.getElementById('feedback-list');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop page reload
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const comment = document.getElementById('comment').value.trim();
+            const rating = document.querySelector('input[name="rating"]:checked')?.value || "No rating";
+
+            if(name && comment) {
+                const feedbackItem = document.createElement('div');
+                feedbackItem.className = 'comment-display-box';
+                feedbackItem.innerHTML = `
+                    <p class="comment-text">"${comment}"</p>
+                    <p class="comment-meta">- ${name}${email ? ' | ' + email : ''}</p>
+                    <p class="comment-rating">Rating: ${rating} / 5</p>
+                `;
+
+                feedbackList.prepend(feedbackItem); // Show new feedback at the top 
+                form.reset(); // Clear the form  
+            }
+        });
+    </script>
+
+</body>
+</html>

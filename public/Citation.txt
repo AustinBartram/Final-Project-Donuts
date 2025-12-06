@@ -1,0 +1,99 @@
+Review Examples:
+These are websites that I had used to learn or review something generally quickly instead of going through
+our textbook and searching through it for examples. So the first 2 links are what i reviewed really quickly.
+following from there are some websites that I used so I could write some pretty kind reviews on the webpage. 
+
+dev.to - review on JS event handling: https://dev.to/giftintech/how-to-handle-forms-in-javascript-without-reloading-the-page-2265
+
+Geeksforgeeks - Javascript review: https://www.geeksforgeeks.org/javascript/how-to-add-html-elements-dynamically-using-javascript/
+
+Birdeye – Positive Review Examples: https://birdeye.com/blog/positive-review-examples/
+
+Trustpilot – 8 Tips for Writing Great Customer Reviews: https://help.trustpilot.com/s/article/8-tips-for-writing-great-customer-reviews?language=en_US
+
+Demandhub – Positive Review Examples: https://www.demandhub.co/articles/positive-review-examples/
+
+
+Notes:
+
+Comments were added to nearly everything in the code for easier reading. 
+
+Following the comments will help you understand what is happening; otherwise, the code is straightforward and interacts directly with the HTML files. and/or js interaction.
+Second to that I had gone through and organized ALL OF THESE LINKS to be about as accurate for all images and resources used to helpe refine or edit structure.
+I also had used TexasRoadhouse's website as a reference to some extent, Just with the logo at the top and how to review and then from there 
+I had gone onto google maps and just reviewed the reviews some people had put in and I wrote in a similar manner to my google.reviewer account. So I already
+had some past knowledge in reviews. Second to that this took a good week of revisions so I hope you enjoy and like this project. I got the css to look all organized and structured nicely. 
+
+
+
+Donut and Image Reference Links:
+
+Pinterest Donut Image: https://www.pinterest.com/pin/179581103888121410/
+
+Duck Donuts Menu: https://www.duckdonuts.com/menu/7834-kew-ave-rancho-cucamonga-ca-91739
+
+Hot Cocoa Recipe – Sugar Spun Run: https://sugarspunrun.com/hot-cocoa-recipe/
+
+Strawberry Apple Lemonade Cocktail – The Flavor Bender: https://www.theflavorbender.com/strawberry-apple-lemonade-cocktail/
+
+Orange Juice Images – Unsplash: https://unsplash.com/s/photos/orange-juice
+
+Textured Glass Water Bottle – WebstaurantStore: https://www.webstaurantstore.com/acopa-32-oz-textured-glass-water-bottle-with-clear-swing-top-lid-case/5538232T.html?srsltid=AfmBOor-6u0_o2FxCbwp0ke9m91XqDfiZ2mfpLNX4mmbtn_wLQrcXhkF
+
+Cappuccino Guide – Tchibo US: https://tchibo.us/blogs/academy/the-art-of-creating-cappuccino?srsltid=AfmBOopGzCc0EUvfIFO8Z8zGpyW-LzVmEg-uMANpkXlA0tuG-sNJ3U7t
+
+Americano Coffee – My Everyday Table: https://myeverydaytable.com/americano-coffee-hot-or-iced/
+
+Iced Latte – My Everyday Table: https://myeverydaytable.com/iced-latte/
+
+Drip Coffee vs Regular Coffee – Bean Bros: https://beanbros.co/blogs/journal/what-is-the-difference-between-drip-coffee-and-regular-coffee?srsltid=AfmBOophDncyiAFKBqGPwOLNzP4l9YbnUVXYX7sdOR6TUWC-BV_dpiKd
+
+Blueberry Muffins with Lemon Glaze – Dear Crissy: https://dearcrissy.com/blueberry-muffins-with-lemon-glaze/
+
+Blueberry Scones – Love & Lemons: https://www.loveandlemons.com/blueberry-scones/
+
+Almond Bear Claw Recipe – Knoxville Campground: https://knoxvillecampground.com/recipes/almond-bear-claw-recipe/
+
+Pioneer Woman’s Glazed Donuts – Relish Caterers: https://relishcaterers.com/recipes/pioneer-womans-glazed-donuts/
+
+Chocolate Frosted Donuts – Boston Girl Bakes: https://www.bostongirlbakes.com/chocolate-frosted-donuts/
+
+14 Homemade Jelly Donut Recipes – Homemade Recipes: https://homemaderecipes.com/14-life-changing-homemade-jelly-donut-recipes/
+
+Maple Donuts – The Cozy Apron: https://thecozyapron.com/maple-donuts/
+
+Old-Fashioned Sour Cream Donuts – Kleinworth & Co.: https://www.kleinworthco.com/old-fashioned-sour-cream-donuts/
+
+Bavarian Cream Donuts – The Food Charlatan: https://thefoodcharlatan.com/bavarian-cream-donuts/
+
+Mochi Donuts – Simply Home Cooked: https://simplyhomecooked.com/best-mochi-donuts-recipe/
+
+Long John / Maple Bar – The Takeout: https://www.thetakeout.com/the-best-doughnut-is-long-john-maple-bar-name-origin-1850313816/
+
+Easy Donut Holes – Rasa Malaysia: https://rasamalaysia.com/easy-donut-holes/
+
+Cinnamon Sugar Twist Donuts – Tornadough Alli: https://tornadoughalli.com/cinnamon-sugar-twist-donuts/
+
+Vegan Croissants – Sarah’s Vegan Kitchen: https://sarahsvegankitchen.com/recipes/vegan-croissants/
+
+Donuts & Pastries Sources
+
+Glazed Donuts: Relish Caterers – Pioneer Woman’s Glazed Donuts https://relishcaterers.com/recipes/pioneer-womans-glazed-donuts/
+
+Chocolate Donuts: Boston Girl Bakes – Chocolate Frosted Donuts https://www.bostongirlbakes.com/chocolate-frosted-donuts/
+
+Jelly Donuts: Homemade Recipes – 14 Life-Changing Homemade Jelly Donut Recipes https://homemaderecipes.com/14-life-changing-homemade-jelly-donut-recipes/
+
+Maple Donuts: The Cozy Apron – Maple Donuts https://thecozyapron.com/maple-donuts/
+
+Sour Cream Donuts: Kleinworth & Co. – Old Fashioned Sour Cream Donuts https://www.kleinworthco.com/old-fashioned-sour-cream-donuts/
+
+Mochi Donuts: Simply Home Cooked – Best Mochi Donuts Recipe https://simplyhomecooked.com/best-mochi-donuts-recipe/
+
+Long John Donuts: The Takeout – The Best Doughnut Is Long John/Maple Bar https://www.thetakeout.com/the-best-doughnut-is-long-john-maple-bar-name-origin-1850313816/
+
+Donut Holes: Rasa Malaysia – Easy Donut Holes https://rasamalaysia.com/easy-donut-holes/
+
+Cinnamon Sugar Twists: Tornadough Alli – Cinnamon Sugar Twist Donuts https://tornadoughalli.com/cinnamon-sugar-twist-donuts/
+
+Croissants: Sarah’s Vegan Kitchen – Vegan Croissants https://sarahsvegankitchen.com/recipes/vegan-croissants/
